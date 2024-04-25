@@ -245,7 +245,7 @@ if __name__ == '__main__':
         if param.requires_grad:
             print(name, param.data.shape)
     print('model is running on', next(model.parameters()).device)
-
+    # 测试一下推送功能
     try:
         train(model)
     except Exception:
