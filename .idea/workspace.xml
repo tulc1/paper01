@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74d84b70-629b-4301-8fa1-c0ecd5a28d2c" name="更改" comment="" />
+    <list default="true" id="74d84b70-629b-4301-8fa1-c0ecd5a28d2c" name="更改" comment="commit:提交paper1完整代码，它使用HRCF作为基础" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,8 +98,16 @@
       <workItem from="1691849071357" duration="14045000" />
       <workItem from="1714029670532" duration="689000" />
       <workItem from="1714031919452" duration="32000" />
-      <workItem from="1714032075235" duration="539000" />
+      <workItem from="1714032075235" duration="1360000" />
     </task>
+    <task id="LOCAL-00001" summary="commit:提交paper1完整代码，它使用HRCF作为基础">
+      <created>1714032669796</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714032669796</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,11 +118,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit:提交paper1完整代码，它使用HRCF作为基础" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit:提交paper1完整代码，它使用HRCF作为基础" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
