@@ -1,0 +1,550 @@
+log=0
+lr=0.002
+batch_size=10000
+epochs=500
+weight_decay=0.0005
+momentum=0.95
+seed=1234
+train_seed=1234
+log_freq=1
+eval_freq=20
+r=2.0
+t=1.0
+i=1
+embedding_dim=50
+scale=0.1
+dim=50
+network=resSumGCN
+c=1
+num_layers=8
+margin=0.2
+alpha=25
+dataset=Amazon-Book
+num_neg=1
+test_ratio=0.2
+norm_adj=True
+Train:  1 629.36
+Train:  2 290.00
+Train:  3 257.01
+Train:  4 236.00
+Train:  5 225.16
+Train:  6 208.78
+Train:  7 203.74
+Train:  8 196.49
+Train:  9 191.82
+Train: 10 186.61
+Train: 11 177.64
+Train: 12 172.65
+Train: 13 170.65
+Train: 14 166.49
+Train: 15 162.38
+Train: 16 160.11
+Train: 17 156.76
+Train: 18 156.53
+Train: 19 151.97
+Test: 20	0.0587	0.0936	0.0567	0.0691
+Train: 20 149.49
+Train: 21 147.56
+Train: 22 144.13
+Train: 23 145.17
+Train: 24 143.34
+Train: 25 139.24
+Train: 26 138.34
+Train: 27 135.38
+Train: 28 134.24
+Train: 29 131.92
+Train: 30 131.93
+Train: 31 128.53
+Train: 32 127.54
+Train: 33 127.78
+Train: 34 123.25
+Train: 35 123.94
+Train: 36 124.39
+Train: 37 123.79
+Train: 38 126.29
+Train: 39 122.28
+Test: 40	0.0674	0.1066	0.0662	0.0800
+Train: 40 121.72
+Train: 41 121.61
+Train: 42 120.39
+Train: 43 118.55
+Train: 44 117.65
+Train: 45 118.46
+Train: 46 113.42
+Train: 47 115.64
+Train: 48 115.07
+Train: 49 114.36
+Train: 50 113.15
+Train: 51 112.08
+Train: 52 112.01
+Train: 53 112.01
+Train: 54 111.00
+Train: 55 108.99
+Train: 56 109.15
+Train: 57 107.36
+Train: 58 105.94
+Train: 59 107.48
+Test: 60	0.0727	0.1138	0.0716	0.0860
+Train: 60 106.04
+Train: 61 104.62
+Train: 62 105.63
+Train: 63 105.19
+Train: 64 104.20
+Train: 65 104.92
+Train: 66 102.83
+Train: 67 103.30
+Train: 68 102.46
+Train: 69 102.86
+Train: 70 100.46
+Train: 71 101.35
+Train: 72 100.65
+Train: 73 99.18
+Train: 74 100.16
+Train: 75 97.53
+Train: 76 97.68
+Train: 77 97.41
+Train: 78 97.77
+Train: 79 98.40
+Test: 80	0.0761	0.1186	0.0752	0.0900
+Train: 80 97.24
+Train: 81 95.67
+Train: 82 96.83
+Train: 83 95.58
+Train: 84 97.37
+Train: 85 96.18
+Train: 86 95.07
+Train: 87 94.59
+Train: 88 94.52
+Train: 89 94.46
+Train: 90 93.82
+Train: 91 92.10
+Train: 92 93.44
+Train: 93 92.71
+Train: 94 93.36
+Train: 95 93.59
+Train: 96 91.93
+Train: 97 92.76
+Train: 98 91.77
+Train: 99 93.43
+Test:100	0.0783	0.1221	0.0777	0.0930
+Train:100 91.74
+Train:101 90.62
+Train:102 92.11
+Train:103 91.82
+Train:104 91.18
+Train:105 90.57
+Train:106 89.95
+Train:107 90.47
+Train:108 88.98
+Train:109 89.86
+Train:110 88.97
+Train:111 89.15
+Train:112 88.44
+Train:113 88.69
+Train:114 88.76
+Train:115 88.29
+Train:116 87.17
+Train:117 88.25
+Train:118 88.08
+Train:119 87.74
+Test:120	0.0803	0.1246	0.0799	0.0952
+Train:120 88.16
+Train:121 86.39
+Train:122 87.21
+Train:123 85.59
+Train:124 86.74
+Train:125 85.63
+Train:126 86.69
+Train:127 85.89
+Train:128 86.67
+Train:129 86.13
+Train:130 86.42
+Train:131 85.98
+Train:132 85.20
+Train:133 84.17
+Train:134 85.42
+Train:135 84.81
+Train:136 85.16
+Train:137 86.56
+Train:138 84.55
+Train:139 84.16
+Test:140	0.0818	0.1264	0.0815	0.0969
+Train:140 84.92
+Train:141 83.05
+Train:142 84.69
+Train:143 83.92
+Train:144 82.86
+Train:145 83.41
+Train:146 83.04
+Train:147 83.05
+Train:148 82.64
+Train:149 82.84
+Train:150 81.61
+Train:151 82.35
+Train:152 83.14
+Train:153 83.05
+Train:154 81.31
+Train:155 81.69
+Train:156 82.28
+Train:157 81.88
+Train:158 81.66
+Train:159 82.02
+Test:160	0.0833	0.1282	0.0830	0.0985
+Train:160 82.09
+Train:161 81.85
+Train:162 81.00
+Train:163 81.89
+Train:164 82.06
+Train:165 82.23
+Train:166 81.00
+Train:167 82.01
+Train:168 80.82
+Train:169 80.65
+Train:170 80.29
+Train:171 80.57
+Train:172 80.31
+Train:173 80.34
+Train:174 80.08
+Train:175 80.93
+Train:176 81.39
+Train:177 80.50
+Train:178 79.23
+Train:179 80.35
+Test:180	0.0844	0.1293	0.0842	0.0996
+Train:180 79.70
+Train:181 79.03
+Train:182 80.02
+Train:183 79.64
+Train:184 79.58
+Train:185 79.83
+Train:186 79.58
+Train:187 79.82
+Train:188 78.92
+Train:189 79.65
+Train:190 79.18
+Train:191 79.17
+Train:192 79.53
+Train:193 80.33
+Train:194 78.86
+Train:195 77.84
+Train:196 79.09
+Train:197 78.37
+Train:198 79.08
+Train:199 78.18
+Test:200	0.0850	0.1302	0.0848	0.1003
+Train:200 77.44
+Train:201 79.15
+Train:202 77.64
+Train:203 78.07
+Train:204 77.43
+Train:205 77.78
+Train:206 77.23
+Train:207 78.34
+Train:208 78.06
+Train:209 78.08
+Train:210 78.15
+Train:211 78.35
+Train:212 77.94
+Train:213 77.63
+Train:214 76.93
+Train:215 77.00
+Train:216 78.58
+Train:217 77.68
+Train:218 77.33
+Train:219 76.47
+Test:220	0.0857	0.1311	0.0855	0.1011
+Train:220 76.80
+Train:221 77.76
+Train:222 77.32
+Train:223 76.92
+Train:224 75.41
+Train:225 77.04
+Train:226 77.71
+Train:227 77.53
+Train:228 77.47
+Train:229 78.25
+Train:230 76.60
+Train:231 77.38
+Train:232 76.11
+Train:233 76.78
+Train:234 75.14
+Train:235 76.03
+Train:236 75.80
+Train:237 76.87
+Train:238 76.12
+Train:239 76.05
+Test:240	0.0864	0.1315	0.0862	0.1017
+Train:240 75.91
+Train:241 76.08
+Train:242 75.26
+Train:243 75.53
+Train:244 76.46
+Train:245 75.69
+Train:246 76.34
+Train:247 76.84
+Train:248 75.65
+Train:249 75.47
+Train:250 76.06
+Train:251 76.67
+Train:252 76.85
+Train:253 75.61
+Train:254 75.57
+Train:255 76.12
+Train:256 75.36
+Train:257 75.61
+Train:258 75.96
+Train:259 75.11
+Test:260	0.0865	0.1319	0.0866	0.1022
+Train:260 73.92
+Train:261 75.72
+Train:262 75.40
+Train:263 74.87
+Train:264 75.04
+Train:265 74.33
+Train:266 75.48
+Train:267 74.79
+Train:268 73.09
+Train:269 74.34
+Train:270 75.41
+Train:271 75.98
+Train:272 76.11
+Train:273 75.09
+Train:274 74.84
+Train:275 75.79
+Train:276 75.36
+Train:277 74.57
+Train:278 74.87
+Train:279 73.92
+Test:280	0.0869	0.1333	0.0870	0.1030
+Train:280 73.46
+Train:281 73.53
+Train:282 74.50
+Train:283 74.31
+Train:284 74.53
+Train:285 74.13
+Train:286 74.55
+Train:287 74.81
+Train:288 73.74
+Train:289 75.03
+Train:290 73.67
+Train:291 75.06
+Train:292 73.36
+Train:293 73.33
+Train:294 74.70
+Train:295 74.45
+Train:296 73.95
+Train:297 74.07
+Train:298 74.42
+Train:299 73.30
+Test:300	0.0874	0.1334	0.0878	0.1036
+Train:300 74.08
+Train:301 74.19
+Train:302 74.53
+Train:303 73.96
+Train:304 73.02
+Train:305 73.77
+Train:306 73.62
+Train:307 74.39
+Train:308 74.04
+Train:309 73.82
+Train:310 73.73
+Train:311 73.90
+Train:312 73.77
+Train:313 72.92
+Train:314 73.49
+Train:315 73.55
+Train:316 74.12
+Train:317 73.76
+Train:318 74.04
+Train:319 73.44
+Test:320	0.0879	0.1339	0.0881	0.1038
+Train:320 72.91
+Train:321 72.26
+Train:322 72.77
+Train:323 73.39
+Train:324 73.71
+Train:325 73.44
+Train:326 73.01
+Train:327 73.00
+Train:328 72.79
+Train:329 73.50
+Train:330 72.98
+Train:331 73.03
+Train:332 72.81
+Train:333 73.36
+Train:334 72.78
+Train:335 72.90
+Train:336 73.09
+Train:337 72.99
+Train:338 73.70
+Train:339 73.50
+Test:340	0.0881	0.1345	0.0882	0.1041
+Train:340 73.26
+Train:341 74.49
+Train:342 73.84
+Train:343 72.37
+Train:344 73.02
+Train:345 73.30
+Train:346 73.64
+Train:347 72.80
+Train:348 72.22
+Train:349 71.82
+Train:350 73.16
+Train:351 72.57
+Train:352 73.01
+Train:353 72.60
+Train:354 72.09
+Train:355 72.85
+Train:356 72.36
+Train:357 72.50
+Train:358 71.88
+Train:359 73.53
+Test:360	0.0882	0.1351	0.0884	0.1045
+Train:360 72.31
+Train:361 72.25
+Train:362 73.60
+Train:363 72.33
+Train:364 72.71
+Train:365 72.17
+Train:366 73.24
+Train:367 73.18
+Train:368 72.63
+Train:369 71.98
+Train:370 73.27
+Train:371 72.95
+Train:372 72.56
+Train:373 71.61
+Train:374 72.34
+Train:375 72.51
+Train:376 72.47
+Train:377 72.55
+Train:378 71.75
+Train:379 72.29
+Test:380	0.0885	0.1349	0.0888	0.1047
+Train:380 72.67
+Train:381 71.58
+Train:382 72.53
+Train:383 71.25
+Train:384 70.80
+Train:385 71.83
+Train:386 72.17
+Train:387 73.18
+Train:388 71.49
+Train:389 71.39
+Train:390 72.76
+Train:391 72.08
+Train:392 71.82
+Train:393 72.91
+Train:394 72.62
+Train:395 72.76
+Train:396 71.66
+Train:397 71.92
+Train:398 72.13
+Train:399 71.14
+Test:400	0.0889	0.1353	0.0889	0.1049
+Train:400 72.25
+Train:401 72.45
+Train:402 71.11
+Train:403 71.77
+Train:404 71.91
+Train:405 73.10
+Train:406 73.21
+Train:407 72.22
+Train:408 73.89
+Train:409 72.45
+Train:410 73.39
+Train:411 71.73
+Train:412 72.67
+Train:413 71.90
+Train:414 72.25
+Train:415 73.15
+Train:416 72.22
+Train:417 72.30
+Train:418 72.69
+Train:419 70.82
+Test:420	0.0892	0.1355	0.0893	0.1052
+Train:420 72.52
+Train:421 72.25
+Train:422 72.27
+Train:423 71.67
+Train:424 71.86
+Train:425 72.39
+Train:426 72.18
+Train:427 72.00
+Train:428 71.68
+Train:429 72.24
+Train:430 72.78
+Train:431 71.95
+Train:432 72.13
+Train:433 71.58
+Train:434 72.69
+Train:435 71.75
+Train:436 71.72
+Train:437 72.20
+Train:438 71.93
+Train:439 72.25
+Test:440	0.0895	0.1360	0.0895	0.1054
+Train:440 71.21
+Train:441 72.48
+Train:442 71.82
+Train:443 71.46
+Train:444 72.54
+Train:445 72.23
+Train:446 71.49
+Train:447 71.58
+Train:448 71.47
+Train:449 71.56
+Train:450 70.83
+Train:451 72.10
+Train:452 71.29
+Train:453 71.51
+Train:454 72.98
+Train:455 73.21
+Train:456 71.90
+Train:457 71.97
+Train:458 71.65
+Train:459 73.65
+Test:460	0.0892	0.1357	0.0897	0.1055
+Train:460 72.13
+Train:461 71.20
+Train:462 71.59
+Train:463 71.68
+Train:464 72.38
+Train:465 72.00
+Train:466 72.01
+Train:467 71.57
+Train:468 72.01
+Train:469 72.10
+Train:470 71.16
+Train:471 70.49
+Train:472 71.59
+Train:473 71.81
+Train:474 71.94
+Train:475 71.42
+Train:476 72.35
+Train:477 71.28
+Train:478 71.38
+Train:479 72.94
+Test:480	0.0893	0.1364	0.0899	0.1060
+Train:480 72.30
+Train:481 72.08
+Train:482 70.84
+Train:483 70.83
+Train:484 71.86
+Train:485 71.12
+Train:486 72.22
+Train:487 70.97
+Train:488 70.41
+Train:489 71.34
+Train:490 71.49
+Train:491 71.93
+Train:492 70.94
+Train:493 71.22
+Train:494 71.28
+Train:495 70.82
+Train:496 71.25
+Train:497 71.85
+Train:498 70.11
+Train:499 70.61
+Test:500	0.0897	0.1364	0.0897	0.1057
+Train:500 71.27
