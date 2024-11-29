@@ -1,10 +1,3 @@
-## WWW'22 HRCF: Enhancing Collaborative Filtering via Hyperbolic Geometric Regularization
-
-
-Authors: Menglin Yang, Min Zhou, Jiahong Liu, Defu Lian, Irwin King
-
-Note: this repository is built upon [HGCF](https://github.com/layer6ai-labs/HGCF) and [HGCN](https://github.com/HazyResearch/hgcn). By the way, if you would like to list HRCF as a baseline, please follow the parameter's setting, such as the layers of HRCF is 8 for slightly dense dataset.
- 
 <a name="Environment"/>
 
 ## Environment:
