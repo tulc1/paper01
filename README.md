@@ -25,9 +25,5 @@ Train and evaluation HRCF:
 
 <a name="citation"/>
 
-## Notes
-
-During our research, we came across LGCF's works. However, when attempting to reproduce their findings, we found that LGCF conducted experiments using different settings with the baseline, i.e., training for 1000 epochs compared to 500 training epochs used by HGCF and other baselines. When we reduced LGCF's training epochs to 500, it barely showed improvement. On the other hand, extending the training epochs of HGCF and HRCF to 1000 led to improvement correspondingly. This illustrates that fully hyperbolic models may not necessarily have a substantial impact on user-item representation. For a fail and consistent comparison, we did not list the result of LGCF.
-
 
 
